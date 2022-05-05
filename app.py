@@ -12,7 +12,7 @@ import time
 import queue
 from tensorflow.keras.models import model_from_json
 import glob
-model=load_model('new_model_bw.h5')
+model=load_model('new_model_saurabh.h5')
 
 st.set_page_config(page_title="Sign Language Recognition", page_icon = "logo2.png", layout = "centered", initial_sidebar_state = "expanded") 
 st.title("Sign Language Recognition")
