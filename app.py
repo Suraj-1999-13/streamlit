@@ -36,7 +36,6 @@ class VideoProcessor:
 
     def recv(self, frame):
         print("Inside recv function")
-        img = cv2.flip(frame, 1)
         img = frame.to_ndarray(format="bgr24")
         imgRGB=cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         result=self.hands.process(imgRGB)
